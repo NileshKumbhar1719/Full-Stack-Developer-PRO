@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<IsTestProject>true</IsTestProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Test SDK -->
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+
+		<!-- NUnit Framework -->
+		<PackageReference Include="NUnit" Version="4.5.1" />
+		<PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+
+		<!-- Mocking -->
+		<PackageReference Include="Moq" Version="4.20.72" />
+
+		<!-- (Optional but recommended for assertions clarity) -->
+		<PackageReference Include="NUnit.Analyzers" Version="4.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\WebApplication1\New_PRO.csproj" />
+	</ItemGroup>
+
+</Project>
